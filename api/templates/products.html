@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/products.js" defer></script>
+</head>
+<body>
+    <nav>
+        <button onclick="logout()">Logout</button>
+    </nav>
+    <h1>Products</h1>
+    <button onclick="showAddProductForm()">Add Product</button>
+    <div id="productForm" style="display:none;">
+        <input type="text" id="productName" placeholder="Product Name">
+        <input type="number" id="productPrice" placeholder="Price">
+        <textarea id="productDescription" placeholder="Description"></textarea>
+        <button onclick="addProduct()">Submit</button>
+    </div>
+    <div id="productList"></div>
+</body>
+</html>
